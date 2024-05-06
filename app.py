@@ -6,6 +6,17 @@ app = Flask(__name__)
 def portfolio():
     return render_template('home.html')
 
+@app.route('/about')
+def about():
+    return render_template('about.html')
+
+@app.route('/achievements')
+def achievements():
+    return render_template('achievements.html')
+
+@app.route('/contact')
+def contact():
+    return render_template('contact.html')
 
 
 #=== RUN APP ===#

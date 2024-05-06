@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Kannan Dilip</title>
+
+    <link rel="stylesheet" href="../static/css/main.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+    <nav>
+        <div class="nav">
+            <div id="logo"><a href="/"><h2>Dr. Kannan Dilip</h2></a></div>
+            <div id="navContent">
+                <a href="/about">About</a>
+                <a href="/achievements">Achievements</a>
+                <a href="/contact">Contact</a>
+            </div>
+            <div id="menu">
+                <a type="button"><img src="../static/images/icons/menu.png" class="dropbtn" onclick="drop()" alt="menu" width="40px"></a>
+            </div>
+        </div>
+        <div id="myDropdown">
+            <ul class="dropdown">
+                <li><a href="/about">About</a></li>
+                <li><a href="/achievements">Achievements</a></li>
+                <li><a href="/contact">Contact</a></li>
+            </ul>
+        </div>
+        
+    </nav>
+    {% block main %}
+
+    {% endblock %}
+    <section class="footer">
+        <div class="left" data-aos="zoom-in">
+            <h1><i>"Leave this world a little better than you found it."</i></h1>
+            <p>-Robert Baden-Powell</p>
+        </div>
+        <!-- <div class="middle">
+            <h3>Links</h3>
+            <ul>
+                <li>About</li>
+                <li>Achievements</li>
+                <li>Contact</li>
+            </ul>
+        </div>
+        <div class="right"></div> -->
+    </section>
+
+    <div id="social">
+        <a href="#"><img src="../static/images/icons/fb.png" alt="facebook"></a>
+        <a href="#"><img src="../static/images/icons/ig.png" alt="instagram"></a>
+        <a href="#"><img src="../static/images/icons/yt.png" alt="youtube"></a>
+    </div>
+
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <!-- menu -->
+    <script>
+        function drop() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+        window.onclick = function(e) {
+            if (!e.target.matches('.dropbtn')) {
+                var myDropdown = document.getElementById("myDropdown");
+                  if (myDropdown.classList.contains('show')) {
+                    myDropdown.classList.remove('show');
+                  }
+                }
+        }
+    </script>   
+</body>
+</html>

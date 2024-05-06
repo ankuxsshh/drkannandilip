@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+
+{% block main %}
+
+<section class="contact" style="padding:2% 5%;">
+    <h1>Connect With Me</h1>
+    <div class="flex50">
+        <div id="left" data-aos="zoom-in">
+            <form action="" method="post" id="contactForm">
+                <input type="text" name="name" placeholder="Full Name">
+                <input type="email" name="email" id="email" placeholder="Email">
+                <input type="text" name="phone" placeholder="Phone Number">
+                <textarea name="msg" id="msg" cols="30" rows="10" placeholder="Your Message"></textarea>
+
+                <a class="submitbtn" id="btn" type="submit" form="#contactForm">Submit</a>
+            </form>
+        </div>
+        <div id="right">
+            <h2>Address :</h2>
+            <br>
+            <p>&emsp;address line 1</p>
+            <p>&emsp;address line 2</p>
+            <p>&emsp;address line 3</p>
+            <br><br>
+
+            <p>Email : <a href="#">exampleemail@mail.com</a></p>
+            <br><br>
+
+            <p>Phone : <a href="#">+91 123 123 1234</a></p>
+            <br><br>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3941.992845812796!2d76.60182027549328!3d8.880256091175308!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b05fdb97250aad5%3A0xbff685223bfa38ea!2sInspireZest%20Technologies%20Pvt%20Ltd!5e0!3m2!1sen!2sin!4v1714707869370!5m2!1sen!2sin" width="100%" height="150" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        
+        </div>
+    </div>
+</section>
+
+{% endblock %}

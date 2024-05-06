@@ -29,11 +29,11 @@
 
     <nav>
         <div class="nav">
-            <div id="logo"><h2>Dr. Kannan Dilip</h2></div>
+            <div id="logo"><a href="/"><h2>Dr. Kannan Dilip</h2></a></div>
             <div id="navContent">
-                <a href="#">About</a>
-                <a href="#">Achievements</a>
-                <a href="#">Contact</a>
+                <a href="/about">About</a>
+                <a href="/achievements">Achievements</a>
+                <a href="/contact">Contact</a>
             </div>
             <div id="menu">
                 <a type="button"><img src="../static/images/icons/menu.png" class="dropbtn" onclick="drop()" alt="menu" width="40px"></a>
@@ -41,9 +41,9 @@
         </div>
         <div id="myDropdown">
             <ul class="dropdown">
-                <li><a href="#">About</a></li>
-                <li><a href="#">Achievements</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="/achievements">Achievements</a></li>
+                <li><a href="/contact">Contact</a></li>
             </ul>
         </div>
         
@@ -63,7 +63,7 @@
                 <p>Born into a family lineage steeped in business acumen spanning three generations on my mother's side, and with a father hailing from a distinguished background, it might have seemed natural for me to follow the path of commerce. However, fate had other plans, woven intricately with threads of courage, strength, and a profound sense of purpose.</p> <br>
                 <p>My father's journey stands as a testament to the resilience of the human spirit. Despite being born into noble lineage, he charted a different course, driven by an unwavering commitment to healing. In an era marred by formidable challenges in paediatric healthcare in India, marked by scarce resources, crumbling infrastructure, and a dearth of specialised medical professionals, he emerged as a beacon of hope to anyone who knew him.</p>
                 <br><br>
-                <a href="#" id="btn">Read More</a>
+                <a href="/about" id="btn">Read More</a>
             </div>
 
             <div id="img" data-aos="zoom-in" data-aos-delay="300"><img src="../static/images/abt1.jpg" alt="about section side image" width="100%"></div>
@@ -128,22 +128,35 @@
     </section>
 
     <section class="contact">
-        <div id="left" data-aos="zoom-in">
-            <form action="" method="post" id="contactForm">
-                <input type="text" name="name" placeholder="Full Name">
-                <input type="email" name="email" id="email" placeholder="Email">
-                <input type="text" name="phone" placeholder="Phone Number">
-                <textarea name="msg" id="msg" cols="30" rows="10" placeholder="Your Message"></textarea>
+        <h1>Connect With Me</h1>
+        <div class="flex50">
+            <div id="left" data-aos="zoom-in">
+                <form action="" method="post" id="contactForm">
+                    <input type="text" name="name" placeholder="Full Name">
+                    <input type="email" name="email" id="email" placeholder="Email">
+                    <input type="text" name="phone" placeholder="Phone Number">
+                    <textarea name="msg" id="msg" cols="30" rows="10" placeholder="Your Message"></textarea>
 
-                <a class="submitbtn" id="btn" type="submit" form="#contactForm">Submit</a>
-            </form>
-        </div>
-        <div id="right">
-            <h3>Address :</h3>
-            <br>
-            <p>address line 1</p>
-            <p>address line 2</p>
-            <p>address line 3</p>
+                    <a class="submitbtn" id="btn" type="submit" form="#contactForm">Submit</a>
+                </form>
+            </div>
+            <div id="right">
+                <h2>Address :</h2>
+                <br>
+                <p>&emsp;address line 1</p>
+                <p>&emsp;address line 2</p>
+                <p>&emsp;address line 3</p>
+                <br><br>
+
+                <p>Email : <a href="#">exampleemail@mail.com</a></p>
+                <br><br>
+
+                <p>Phone : <a href="#">+91 123 123 1234</a></p>
+                <br><br>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3941.992845812796!2d76.60182027549328!3d8.880256091175308!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b05fdb97250aad5%3A0xbff685223bfa38ea!2sInspireZest%20Technologies%20Pvt%20Ltd!5e0!3m2!1sen!2sin!4v1714707869370!5m2!1sen!2sin" width="100%" height="150" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+            
+            </div>
         </div>
     </section>
 
