@@ -163,7 +163,7 @@ nav #myDropdown .dropdown li{margin-top:10px;padding-left: 5%;}
 .expect .dgrid #item p {transform: scale(0);height:0;font-size: 10pt;padding:0 10px;}
 .expect .dgrid #item #text:hover p {height:100%;transform:scale(1);transition: 0.5s ease;}
 .expect .dgrid #item #text:hover a {display:block; transition: 0.5s ease}
-.expect .dgrid #item #text {background: rgba(0,0,0,1);padding:10px;position:absolute;bottom:-40px;left: 0;right: 0;margin: 0 10px;}
+.expect .dgrid #item #text {background: rgba(0,0,0,1);padding:10px;position:absolute;bottom:-40px;left: 0;right: 0;margin: 0 10px;border-radius: 25px;}
 @media screen and (max-width:500px) {
     .expect .dgrid {grid-template-columns: auto;padding-bottom:12%;}
 }
