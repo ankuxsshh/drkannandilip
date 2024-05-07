@@ -10,29 +10,28 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
-    <!-- HERO -->
-    <section class="hero">
-        <div id="img" data-aos="zoom-in"><img src="../static/images/dp.jpg" alt="" width="100%"></div>
-        <div id="content" data-aos="fade-up" data-aos-delay="300">
-            <h1>Dr. Kannan Dilip</h1>
-            <p>Clinical Researcher | Teacher | Author | Doctor</p>
-            <p>Healthcare Project Designer</p>
-            <p>Social Entrepreneur</p>
+    <section class="intro" data-aos="fade-down" data-aos-duration="1000">
+        <div class="videoBg">
+            <video autoplay muted loop>
+                <source src="../static/videos/intro1.mp4" type="video/mp4">
+            </video>
 
-            <div id="btns">
-                <a href="#" id="cntn">Contact Now</a>
-                <a href="#" id="rm">Read More</a>
+            <div class="videoText" align="center">
+                <h1 data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="700">Dr. Kannan Dilip</h1>
+                <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="700">Expert Care, Brighter Futures, Defeating Diabetes.</p>
+                <a href="#">Book Appointment</a>
             </div>
-            
+
         </div>
     </section>
+   
 
     <nav>
         <div class="nav">
             <div id="logo"><a href="/"><h2>Dr. Kannan Dilip</h2></a></div>
             <div id="navContent">
                 <a href="/about">About</a>
-                <a href="/achievements">Achievements</a>
+                <a href="/achievements">Expertise</a>
                 <a href="/contact">Contact</a>
             </div>
             <div id="menu">
@@ -42,20 +41,37 @@
         <div id="myDropdown">
             <ul class="dropdown">
                 <li><a href="/about">About</a></li>
-                <li><a href="/achievements">Achievements</a></li>
+                <li><a href="/achievements">Expertise</a></li>
                 <li><a href="/contact">Contact</a></li>
             </ul>
         </div>
         
     </nav>
+     <!-- HERO -->
+     <section class="hero">
+        <div id="img" data-aos="zoom-in"><img src="../static/images/dp.jpg" alt="" width="100%"></div>
+        <div id="content" data-aos="fade-up" data-aos-delay="300">
+            <h1>Apart from being<br>a Diabetologist <br>I'm also :</h1>
+            <p><span>Clinical Researcher</span> | <span>Teacher</span> | <span>Author</span></p>
+            <!-- <span>Doctor</span> -->
+            <p><span>Healthcare Project Designer</span></p>
+            <p><span>Social Entrepreneur</span></p>
 
-    <section class="about">
-        <div class="video" data-aos="zoom-in">
+            <div id="btns">
+                <a href="#" id="cntn">Contact Now</a>
+                <a href="#heroRead" id="rm">Know More</a>
+            </div>
+            
+        </div>
+    </section>
+
+    <section class="about" id="heroRead">
+        <div class="video" data-aos="zoom-in" data-aos-duration="1000">
             <video autoplay controls>
                 <source src="../static/videos/aboutVid.mp4" type="video/mp4">
             </video>
         </div>
-        <div class="content" data-aos="fade-right">
+        <div class="content" data-aos="fade-right" id="heroRead">
 
             <div id="text">
                 <h2>Meet Dr. Kannan Dilip</h2>
@@ -69,66 +85,99 @@
             <div id="img" data-aos="zoom-in" data-aos-delay="300"><img src="../static/images/abt1.jpg" alt="about section side image" width="100%"></div>
             
         </div>
+
+        
     </section>
 
     <section class="achievements">
-        <h1>Achievements</h1>
-        <div class="flex50">
-            <div id="img" data-aos="zoom-in"><img src="../static/images/doc.jpg" alt="doctor-image" width="100%"></div>
+        <h1 id="heading">My Expertise</h1>
+        <div class="flex">
+        <div class="dgrid">
+            <div id="img" data-aos="zoom-in"><img src="../static/images/researcher.jpg" alt="doctor-image" width="100%"></div>
             <div id="text" data-aos="fade-up" data-aos-delay="300">
-                <h2>Doctor</h2>
-                <br>
-                <p>Growing up unlike most people I was blessed with two sets of parents not one. Counting nothing short from Acha & Amma, the caring & love I got from my maternal grandparents & the attachment I had with them was nothing short the definition of parents. I believe this is a special blessing the heavens have given me. I got to live 10,830 precious days with my grandpa and 12,837 magical days with my grandma - which I only wish I could relive them a million times over & again...</p>
-                <br><br>
-                <a href="#" id="btn">Read More</a>
+                <a href="#"><h1>The Doctor</h1></a>
             </div>
-            
         </div>
-        <div class="flex50">
-            <div id="img" data-aos="zoom-in"><img src="../static/images/researcher.jpg" alt="researcher-image" width="100%"></div>
+        <div class="dgrid">
+            <div id="img" data-aos="zoom-in"><img src="../static/images/researcher.jpg" alt="doctor-image" width="100%"></div>
             <div id="text" data-aos="fade-up" data-aos-delay="300">
-                <h2>Clinical Researcher</h2>
-                <br>
-                <p>In the intricate realm of healthcare, I've transitioned from a seasoned medical practitioner to a visionary clinical researcher and devoted social entrepreneur specialising in diabetology. Driven by a profound mission, I'm committed to reshaping the landscape of diabetes care, from conventional glucose-centric management towards a insulin-centric paradigm.</p>
-                <br>
-                <p>In the early 1900s the biggest medical cause for lose of human life were infections, maternal mortality, infant mortality, cardiovascular diseases, Malnutrition and starvation.</p>
-                <br><br>
-                <a href="#" id="btn">Read More</a>
-            </div>
-            
+                <a href="#"><h1>Clinical Researcher</h1></a>
+
+            </div>   
         </div>
-        
-        <div class="flex50">
-            <div id="img" data-aos="zoom-in"><img src="../static/images/researcher.jpg" alt="researcher-image" width="100%"></div>
+        <div class="dgrid">
+            <div id="img" data-aos="zoom-in"><img src="../static/images/researcher.jpg" alt="doctor-image" width="100%"></div>
             <div id="text" data-aos="fade-up" data-aos-delay="300">
-                <h2>The Auther | The Teacher</h2>
-                <br>
-                <p>In the intricate realm of healthcare, I've transitioned from a seasoned medical practitioner to a visionary clinical researcher and devoted social entrepreneur specialising in diabetology. Driven by a profound mission, I'm committed to reshaping the landscape of diabetes care, from conventional glucose-centric management towards a insulin-centric paradigm.</p>
-                <br>
-                <p>In the early 1900s the biggest medical cause for lose of human life were infections, maternal mortality, infant mortality, cardiovascular diseases, Malnutrition and starvation.</p>
-                <br><br>
-                <a href="#" id="btn">Read More</a>
-            </div>
-            
+                <a href="#"><h1>The Auther | The Teacher</h1></a>
+
+            </div>   
+        </div>
+        <div class="dgrid">
+            <div id="img" data-aos="zoom-in"><img src="../static/images/researcher.jpg" alt="doctor-image" width="100%"></div>
+            <div id="text" data-aos="fade-up" data-aos-delay="300">
+                <a href="#"><h1>Healthcare Designer & Social Entreprenur</h1></a>
+
+            </div>   
+        </div>
         </div>
         
-        <div class="flex50">
-            <div id="img" data-aos="zoom-in"><img src="../static/images/researcher.jpg" alt="researcher-image" width="100%"></div>
-            <div id="text" data-aos="fade-up" data-aos-delay="300">
-                <h2>Healthcare Designer & <br>Social Entreprenur</h2>
-                <br>
-                <p>In the intricate realm of healthcare, I've transitioned from a seasoned medical practitioner to a visionary clinical researcher and devoted social entrepreneur specialising in diabetology. Driven by a profound mission, I'm committed to reshaping the landscape of diabetes care, from conventional glucose-centric management towards a insulin-centric paradigm.</p>
-                <br>
-                <p>In the early 1900s the biggest medical cause for lose of human life were infections, maternal mortality, infant mortality, cardiovascular diseases, Malnutrition and starvation.</p>
-                <br><br>
-                <a href="#" id="btn">Read More</a>
+    </section>
+    <section class="expect">
+        <h1 id="heading">What To Expect</h1>
+        <div class="dgrid">
+            <div class="mt50" id="item" data-aos="fade-up">
+                <img src="../static/images/doc.jpg" alt="item" width="100%">
+                <div id="text">
+                    <h2>HEADING 1</h2>
+                    <p>This place will be filled with what you have to say about heading in short. This place will be filled with what you have to say about heading in short.</p>
+                    <a href="#" class="btn">Read More</a>
+                </div>
             </div>
-            
+            <div class="mt50" id="item" data-aos="fade-up" data-aos-delay="200">
+                <img src="../static/images/researcher.jpg" alt="item" width="100%">
+                <div id="text">
+                <h2>HEADING 2</h2>
+                <p>This place will be filled with what you have to say about heading in short. This place will be filled with what you have to say about heading in short.</p>
+                <a href="#" class="btn">Read More</a>
+                </div>
+            </div>
+            <div class="mt50" id="item" data-aos="fade-up" data-aos-delay="400">
+                <img src="../static/images/doc.jpg" alt="item" width="100%">
+                <div id="text">
+                    <h2>HEADING 3</h2>
+                    <p>This place will be filled with what you have to say about heading in short. This place will be filled with what you have to say about heading in short.</p>
+                    <a href="#" class="btn">Read More</a>
+                </div>
+            </div>
+            <div class="mt50" id="item" data-aos="fade-up">
+                <img src="../static/images/researcher.jpg" alt="item" width="100%">
+                <div id="text">
+                    <h2>HEADING 4</h2>
+                    <p>This place will be filled with what you have to say about heading in short. This place will be filled with what you have to say about heading in short.</p>
+                    <a href="#" class="btn">Read More</a>
+                </div>
+            </div>
+            <div class="mt50" id="item" data-aos="fade-up" data-aos-delay="200">
+                <img src="../static/images/doc.jpg" alt="item" width="100%">
+                <div id="text">
+                    <h2>HEADING 5</h2>
+                    <p>This place will be filled with what you have to say about heading in short. This place will be filled with what you have to say about heading in short.</p>
+                    <a href="#" class="btn">Read More</a>
+                </div>
+            </div>
+            <div class="mt50" id="item" data-aos="fade-up" data-aos-delay="400">
+                <img src="../static/images/researcher.jpg" alt="item" width="100%">
+                <div id="text">
+                    <h2>HEADING 6</h2>
+                    <p>This place will be filled with what you have to say about heading in short. This place will be filled with what you have to say about heading in short.</p>
+                    <a href="#" class="btn">Read More</a>
+                </div>
+            </div>
         </div>
     </section>
 
     <section class="contact">
-        <h1>Connect With Me</h1>
+        <h1>Contact Me</h1>
         <div class="flex50">
             <div id="left" data-aos="zoom-in">
                 <form action="" method="post" id="contactForm">

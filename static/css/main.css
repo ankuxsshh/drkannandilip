@@ -5,7 +5,10 @@
 body {
     width: 100vw;
     background: #000000;
+    overflow-x: hidden !important;
 }
+
+.mt50 {margin-top: 50px;}
 
 #btn {border: 1px solid #808080;padding:10px;transition:0.5s ease;}
 #btn:hover {border: 1px solid limegreen;background: limegreen;color:#000000;transition:0.5s ease;}
@@ -25,7 +28,34 @@ nav #myDropdown {color: #f5f5f5;display: none;transition: 0.5s ease;padding:5%; 
 nav #myDropdown .dropdown li{margin-top:10px;padding-left: 5%;}
 .show{display: block !important;}
 
-
+/* INTRO */
+.intro {
+    /* width:100%; */
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+.intro .videoBg {position:relative;}
+.intro .videoBg video {
+    /* width: 100vw; */
+    height: 100vh;
+    position:static;
+    z-index: -1;
+}
+.videoBg .videoText {
+    position:absolute;
+     top:0; bottom: 0; left: 0; right:0;
+    background:linear-gradient(to top,rgba(0,0,0,0.8),transparent);
+    color: #f5f5f5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.videoBg .videoText h1 {font-size:clamp(2.4rem,10vw,5.5rem);font-weight: 800;}
+.videoBg .videoText p {font-size: clamp(0.5,10vw,1rem);margin-top:10px;}
+.videoBg .videoText a {position: absolute; bottom:100px; padding: 10px 15px; border: 1px solid #f5f5f5; border-radius: 25px; color: #f5f5f5; transition: 0.5s ease-in;}
+.videoBg .videoText a:hover {background: limegreen; border: 1px solid limegreen; color: #000000; transition: 0.3s ease-in; font-weight: 700;}
 /* HERO */
 .hero{padding:0;display:grid;gap:50px;overflow: hidden;grid-template-columns: 50% 50%;width:100vw;}
 .hero #content, .hero #img {color: #f5f5f5;}
@@ -33,7 +63,7 @@ nav #myDropdown .dropdown li{margin-top:10px;padding-left: 5%;}
 .hero #img{max-height: 100vh;}
 .hero #content{display: flex;flex-direction: column;justify-content: center;padding:0 10px;}
 
-.hero #content h1{font-weight: 700;font-size: clamp(2.7em,5vw,5em);white-space: nowrap;}
+.hero #content h1{white-space:wrap;font-weight: 700;font-size: clamp(2.5em,5vw,5em);white-space: nowrap;}
 .hero #content p{text-align: left;margin-top:5px;font-size: clamp(0.3rem,5vw,1.4rem);}
 
 .hero #btns {
@@ -41,34 +71,34 @@ nav #myDropdown .dropdown li{margin-top:10px;padding-left: 5%;}
     gap: 15px;
     margin-top: 30px;
     align-items: center;
-    font-size: 15pt;
+    font-size: 12pt;
 }
-.hero #btns #cntn {border:1px solid #808080;padding:10px 10px;transition:0.3s ease-in;}
-.hero #btns #cntn:hover {background: limegreen;color:#000000 !important;transition:0.3s ease-in;border:1px solid limegreen;}
+.hero #btns #cntn {border:1px solid #808080;padding:10px 15px;transition:0.3s ease-in; border-radius: 25px;}
+.hero #btns #cntn:hover {background: limegreen;color:#000000 !important;transition:0.3s ease-in;border:1px solid limegreen; border-radius: 25px;}
 
 @media screen and (max-width:500px) {
     .hero {
         grid-template-columns: auto;
         gap: 0;
-        height: 100vh;
     }
     .hero #content {
         padding-top: 8.5%;
         padding-bottom: 15%;
         padding-left: 5%;
         padding-right:5%;
-        border-bottom: 2px solid #f5f5f5;
+        /* border-bottom: 2px solid #f5f5f5; */
     }
     .hero #content p{font-size: 12pt;}
     nav #navContent {display:none;}
     #menu {display:block;}
     #menu ul{display:none;}
 }
-
+.hero #content span {transition:0.2s ease;}
+.hero #content span:hover {color:limegreen; transition: 0.2s ease;}
 /* ABOUT */
 .about .video video {max-height: 100vh;width:100%;}
 
-.about .content {display: flex;padding: 2% 5%;}
+.about .content {display: flex;padding: 5% 5%;}
 .about .content #img, .about .content #text {flex-basis: 50%;}
 .about .content #text {color: #f5f5f5;padding-right: 5%; text-align: justify;}
 
@@ -90,17 +120,50 @@ nav #myDropdown .dropdown li{margin-top:10px;padding-left: 5%;}
 }
 
 /* Achievements */
-.achievements {padding:10% 5%}
-.achievements h1 {color:#f5f5f5;font-size:38pt;}
-
-.achievements .flex50 {display: flex;margin-top: 50px;gap:30px;}
-.achievements .flex50 #text, .achievements .flex50 #img {flex-basis: 50%;}
-.achievements .flex50 #text {color:#f5f5f5;text-align: justify;padding-left:5%;}
+.achievements {padding:5%;}
+.achievements .flex {display:flex;gap:30px;padding:5% 0;}
+.achievements #heading {color:#f5f5f5;font-size:4rem;display:none;}
+.achievements .dgrid {position:relative;}
+.achievements .dgrid #text{
+    color:#f5f5f5;
+    text-align: center;
+    position: absolute;
+    top: 0;bottom: 0;left: 0;right: 0;
+    background: rgba(0,0,0,0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: scale(0);
+    transition:0.2s ease;
+}
+.achievements .dgrid:hover #text{transform: scale(1);transition:0.2s ease;}
+.achievements .dgrid #text h1 {font-size:1.25rem;margin-top:15px; color: #f5f5f5;}
+/* .achievements .flex50 #text, .achievements .flex50 #img {flex-basis: 50%;} */
+.achievements .dgrid #text h1:hover {color:limegreen;transition: 0.2s ease;}
 
 @media screen and (max-width:500px) {
-    .achievements .flex50 {flex-direction: column;gap:30px;}
-    .achievements h1 {font-size:34pt;}
-    .achievements .flex50 #text {padding: 0;}
+    .achievements .flex {flex-wrap: wrap;}
+    .achievements #heading {display:block;font-size:3rem;color:#ffffff;}
+}
+
+/* what to expect */
+.expect {padding:5%;background: #f5f5f5;}
+.expect .dgrid {display:grid;grid-template-columns: auto auto auto;gap:25px; padding-bottom:5%;}
+#heading {color:#000000;font-size:3.5rem;font-weight: 700;}
+
+@keyframes expand {
+    from {height:0;}
+    to {height: 100%;}
+}
+.expect .dgrid #item {color:#f5f5f5;position:relative;text-align: center;}
+.expect .dgrid #item h2, .expect .dgrid #item p {margin-top:10px;}
+.expect .dgrid #item a {display:none;margin-top: 15px;padding: 0 10px;}
+.expect .dgrid #item p {transform: scale(0);height:0;font-size: 10pt;padding:0 10px;}
+.expect .dgrid #item #text:hover p {height:100%;transform:scale(1);transition: 0.5s ease;}
+.expect .dgrid #item #text:hover a {display:block; transition: 0.5s ease}
+.expect .dgrid #item #text {background: rgba(0,0,0,1);padding:10px;position:absolute;bottom:-40px;left: 0;right: 0;margin: 0 10px;}
+@media screen and (max-width:500px) {
+    .expect .dgrid {grid-template-columns: auto;padding-bottom:12%;}
 }
 
 .contact {padding: 5% 5%;}
@@ -135,4 +198,4 @@ nav #myDropdown .dropdown li{margin-top:10px;padding-left: 5%;}
 
 /* fixed solial media */
 #social{display: flex;gap:10px;position:fixed;right:10px;bottom:10px;}
-#social a img{width:50px}
+#social a img{width:35px}
