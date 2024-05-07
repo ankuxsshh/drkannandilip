@@ -10,7 +10,7 @@ body {
 
 .mt50 {margin-top: 50px;}
 
-#btn {border: 1px solid #808080;padding:10px;transition:0.5s ease;}
+#btn {border: 1px solid #808080;padding:10px 15px;transition:0.5s ease;border-radius: 25px;}
 #btn:hover {border: 1px solid limegreen;background: limegreen;color:#000000;transition:0.5s ease;}
 
 a {text-decoration: none !important; color:#808080;transition:0.3s ease;}
@@ -53,7 +53,7 @@ nav #myDropdown .dropdown li{margin-top:10px;padding-left: 5%;}
     justify-content: center;
 }
 .videoBg .videoText h1 {font-size:clamp(2.4rem,10vw,5.5rem);font-weight: 800;}
-.videoBg .videoText p {font-size: clamp(0.5,10vw,1rem);margin-top:10px;}
+.videoBg .videoText p {font-size: clamp(0.5,10vw,1.5rem);margin-top:10px;padding: 2% 20%;line-height: 1.5;}
 .videoBg .videoText a {position: absolute; bottom:100px; padding: 10px 15px; border: 1px solid #f5f5f5; border-radius: 25px; color: #f5f5f5; transition: 0.5s ease-in;}
 .videoBg .videoText a:hover {background: limegreen; border: 1px solid limegreen; color: #000000; transition: 0.3s ease-in; font-weight: 700;}
 /* HERO */
@@ -137,9 +137,11 @@ nav #myDropdown .dropdown li{margin-top:10px;padding-left: 5%;}
     transition:0.2s ease;
 }
 .achievements .dgrid:hover #text{transform: scale(1);transition:0.2s ease;}
-.achievements .dgrid #text h1 {font-size:1.25rem;margin-top:15px; color: #f5f5f5;}
+.achievements .dgrid #text h1 {font-size:12pt;margin-top:15px; color: #f5f5f5;padding:10px 15px;border: 1px solid #f5f5f5;border-radius: 25px;}
 /* .achievements .flex50 #text, .achievements .flex50 #img {flex-basis: 50%;} */
-.achievements .dgrid #text h1:hover {color:limegreen;transition: 0.2s ease;}
+.achievements .dgrid #text h1:hover {color:#000000;transition: 0.2s ease;background: limegreen;border:1px solid limegreen;}
+
+.achievements .dgrid #itemName {padding:10px;text-align: center;border:2px solid #000000;color: #f5f5f5;background: #000000;}
 
 @media screen and (max-width:500px) {
     .achievements .flex {flex-wrap: wrap;}
