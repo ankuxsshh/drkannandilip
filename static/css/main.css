@@ -120,7 +120,7 @@ nav #myDropdown .dropdown li{margin-top:10px;padding-left: 5%;}
 }
 
 /* Achievements */
-.achievements {padding:5%;}
+.achievements {padding:0 5%;background: linear-gradient(to bottom,#000000 30%,#f5f5f5 70%);}
 .achievements .flex {display:flex;gap:30px;padding:5% 0;}
 .achievements #heading {color:#f5f5f5;font-size:4rem;display:none;}
 .achievements .dgrid {position:relative;}
@@ -147,7 +147,7 @@ nav #myDropdown .dropdown li{margin-top:10px;padding-left: 5%;}
 }
 
 /* what to expect */
-.expect {padding:5%;background: #f5f5f5;}
+.expect {padding:5%;background: linear-gradient(to top,#000000 0%,#f5f5f5 80%)}
 .expect .dgrid {display:grid;grid-template-columns: auto auto auto;gap:25px; padding-bottom:5%;}
 #heading {color:#000000;font-size:3.5rem;font-weight: 700;}
 
