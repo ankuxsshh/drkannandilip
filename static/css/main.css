@@ -61,7 +61,7 @@ nav #myDropdown .dropdown li{margin-top:10px;padding-left: 5%;}
 .hero #content, .hero #img {color: #f5f5f5;}
 
 .hero #img{max-height: 100vh;}
-.hero #content{display: flex;flex-direction: column;justify-content: center;padding:0 10px;}
+.hero #content{display: flex;flex-direction: column;justify-content: center;padding:0;}
 
 .hero #content h1{white-space:wrap;font-weight: 700;font-size: clamp(2.5em,5vw,5em);white-space: nowrap;}
 .hero #content p{text-align: left;margin-top:5px;font-size: clamp(0.3rem,5vw,1.4rem);}
@@ -119,6 +119,15 @@ nav #myDropdown .dropdown li{margin-top:10px;padding-left: 5%;}
     .aboutImg {flex-direction: column;}
 }
 
+.about .left {margin-top:25px;text-align: center;}
+
+.booking {display:flex;background: #f5f5f5;}
+.booking .div2 {padding-top:5%;}
+.booking .div2 h1 {color: #000000;padding-left:5%;font-size:clamp(1rem,10vw,3rem);}
+.booking .div2 form {display:grid;padding:5%;gap:15px;}
+.booking .div2, .booking .div1 {flex-basis:50%;}
+.booking input, .booking textarea {padding:8px;font-size:14pt;background: transparent;border:none;border-bottom: 2px solid #000000;color:#000000;}
+
 /* Achievements */
 .achievements {padding:0 5%;background: linear-gradient(to bottom,#000000 30%,#f5f5f5 70%);}
 .achievements .flex {display:flex;gap:30px;padding:5% 0;}
@@ -142,29 +151,35 @@ nav #myDropdown .dropdown li{margin-top:10px;padding-left: 5%;}
 .achievements .dgrid #text h1:hover {color:#000000;transition: 0.2s ease;background: limegreen;border:1px solid limegreen;}
 
 .achievements .dgrid #itemName {padding:10px;text-align: center;border:2px solid #000000;color: #f5f5f5;background: #000000;}
-
+@media screen and (max-width:1050px) {
+    .achievements .flex {
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+}
 @media screen and (max-width:500px) {
-    .achievements .flex {flex-wrap: wrap;}
+    .achievements .flex {display:flex;flex-wrap: wrap;}
     .achievements #heading {display:block;font-size:3rem;color:#ffffff;}
 }
 
 /* what to expect */
-.expect {padding:5%;background: linear-gradient(to top,#000000 0%,#f5f5f5 80%)}
+.expect {padding:5%;background:#000000;}
 .expect .dgrid {display:grid;grid-template-columns: auto auto auto;gap:25px; padding-bottom:5%;}
-#heading {color:#000000;font-size:3.5rem;font-weight: 700;}
-.expect .para {text-align: justify;}
+#heading {color:#f5f5f5;font-size:3.5rem;font-weight: 700;}
+.expect .para {text-align: justify;color:#f5f5f5;}
 
 @keyframes expand {
     from {height:0;}
     to {height: 100%;}
 }
 .expect .dgrid #item {color:#f5f5f5;position:relative;text-align: center;}
-.expect .dgrid #item h2, .expect .dgrid #item p {margin-top:10px;}
-.expect .dgrid #item a {display:none;margin-top: 15px;padding: 0 10px;}
-.expect .dgrid #item p {transform: scale(0);height:0;font-size: 10pt;padding:0 10px;}
+.expect .dgrid #item h2, .expect .dgrid #item p {margin-top:10px;color:#000000 !important;}
+.expect .dgrid #item a {display:none;margin-top: 20px;padding: 10px 15px;}
+.expect .dgrid #item p {transform: scale(0);height:0;font-size: 10pt;padding:0 10px;color: #f5f5f5;}
 .expect .dgrid #item #text:hover p {height:100%;transform:scale(1);transition: 0.5s ease;}
 .expect .dgrid #item #text:hover a {display:block; transition: 0.5s ease}
-.expect .dgrid #item #text {background: rgba(0,0,0,1);padding:10px;position:absolute;bottom:-40px;left: 0;right: 0;margin: 0 10px;border-radius: 25px;}
+.expect .dgrid #item:focus p {height:100%;transform:scale(1);transition: 0.5s ease;}
+.expect .dgrid #item #text {background: rgba(255,255,255,1);padding:10px;position:absolute;bottom:-40px;left: 0;right: 0;margin: 0 10px;border-radius: 25px;}
 @media screen and (max-width:500px) {
     .expect .dgrid {grid-template-columns: auto;padding-bottom:12%;}
 }
@@ -202,3 +217,8 @@ nav #myDropdown .dropdown li{margin-top:10px;padding-left: 5%;}
 /* fixed solial media */
 #social{display: flex;gap:10px;position:fixed;right:10px;bottom:10px;}
 #social a img{width:35px}
+
+@media screen and (max-width:1050px) {
+    .mobBtn {background: limegreen; border: 1px solid limegreen !important;padding:10px 15px;color:#000000 !important;border-radius: 25px;}
+    .expect .dgrid {grid-template-columns: 50% 50%;}
+}
