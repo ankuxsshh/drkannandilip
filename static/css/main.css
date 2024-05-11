@@ -121,7 +121,7 @@ nav #myDropdown .dropdown li{margin-top:10px;padding-left: 5%;}
 
 .about .left {margin-top:25px;text-align: center;}
 
-.booking {display:flex;background: #f5f5f5;}
+.booking {display:flex;background: linear-gradient(to bottom, #f5f5f5 35%, #000000 90%);;}
 .booking .div2 {padding-top:5%;}
 .booking .div2 h1 {color: #000000;padding-left:5%;font-size:clamp(1rem,10vw,3rem);}
 .booking .div2 form {display:grid;padding:5%;gap:15px;}
