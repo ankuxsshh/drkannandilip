@@ -1,6 +1,7 @@
 @font-face {font-family: comfortaa;src: url(../fonts/Comfortaa-Regular.ttf);}
+@font-face {font-family: signature;src: url(../fonts/MarckScript-Regular.ttf);}
 
-*{margin:0;padding:0;font-family: comfortaa !important;}
+*{margin:0;padding:0;font-family: comfortaa;}
 
 body {
     width: 100vw;
@@ -57,14 +58,14 @@ nav #myDropdown .dropdown li{margin-top:10px;padding-left: 5%;}
 .videoBg .videoText a {position: absolute; bottom:100px; padding: 10px 15px; border: 1px solid #f5f5f5; border-radius: 25px; color: #f5f5f5; transition: 0.5s ease-in;}
 .videoBg .videoText a:hover {background: limegreen; border: 1px solid limegreen; color: #000000; transition: 0.3s ease-in; font-weight: 700;}
 /* HERO */
-.hero{padding:0;display:grid;gap:50px;overflow: hidden;grid-template-columns: 50% 50%;width:100vw;}
+.hero{padding:0;display:grid;gap:50px;overflow: hidden;grid-template-columns: 50% 50%;width:100%;}
 .hero #content, .hero #img {color: #f5f5f5;}
 
 .hero #img{max-height: 100vh;}
-.hero #content{display: flex;flex-direction: column;justify-content: center;padding:0;}
+.hero #content{display: flex;flex-direction: column;justify-content: center;padding-right:20px;}
 
 .hero #content h1{white-space:wrap;font-weight: 700;font-size: clamp(2.5em,5vw,5em);white-space: nowrap;}
-.hero #content p{text-align: left;margin-top:5px;font-size: clamp(0.3rem,5vw,1.4rem);}
+.hero #content p{text-align: justify;margin-top:5px;font-size: clamp(0.3rem,5vw,1.4rem);padding-right:60px;}
 
 .hero #btns {
     display: flex;
@@ -93,6 +94,7 @@ nav #myDropdown .dropdown li{margin-top:10px;padding-left: 5%;}
     #menu {display:block;}
     #menu ul{display:none;}
 }
+.hero #content #quote i {font-family: signature !important;text-align: center; font-size: 20pt  !important;}
 .hero #content span {transition:0.2s ease;}
 .hero #content span:hover {color:limegreen; transition: 0.2s ease;}
 /* ABOUT */
@@ -117,21 +119,27 @@ nav #myDropdown .dropdown li{margin-top:10px;padding-left: 5%;}
     .fields #field {flex-basis: 100%;width: 100%;padding: 5% 0%;}
 
     .aboutImg {flex-direction: column;}
+    .hero #content p {padding:0 5%;}
 }
 
 .about .left {margin-top:25px;text-align: center;}
 
-.booking {display:flex;background: linear-gradient(to bottom, #f5f5f5 35%, #000000 90%);;}
-.booking .div2 {padding-top:5%;}
-.booking .div2 h1 {color: #000000;padding-left:5%;font-size:clamp(1rem,10vw,3rem);}
-.booking .div2 form {display:grid;padding:5%;gap:15px;}
+.booking {background: url(../images/consult2.jpg);background-size: cover;background-attachment: fixed;justify-content: left;}
+.booking .div2 {padding:5% 0;background: linear-gradient(to right,rgba(0,0,0,0.6),transparent);width: 100%;}
+.booking .div2 h1 {color: #000000;padding-left:5%;font-size:clamp(1rem,10vw,3rem);margin-bottom: 25px;}
+.booking .div2 p {padding-left:5%;margin-top:5px;font-size:15pt;}
+.booking .div2 #book {margin-left:5%;margin-top:20px;background: limegreen;border: 1px solid limegreen;border-radius: 25px;padding:10px 20px;font-size: 12pt;cursor: pointer;}
+.booking .div2 #book:hover {background: #000000;border: 1px solid #000000;color:#f5f5f5;transition:ease 0.3s}
+/* .booking .div2 form {display:grid;padding:5%;gap:15px;} */
 .booking .div2, .booking .div1 {flex-basis:50%;}
 .booking input, .booking textarea {padding:8px;font-size:14pt;background: transparent;border:none;border-bottom: 2px solid #000000;color:#000000;}
-
+@media screen and (max-width:500px) {
+    .booking .div2 {text-align: center;}
+}
 /* Achievements */
 .achievements {padding:0 5%;background: linear-gradient(to bottom,#000000 30%,#f5f5f5 70%);}
 .achievements .flex {display:flex;gap:30px;padding:5% 0;}
-.achievements #heading {color:#f5f5f5;font-size:4rem;display:none;}
+.achievements #heading {color:#f5f5f5;font-size:4rem;}
 .achievements .dgrid {position:relative;}
 .achievements .dgrid #text{
     color:#f5f5f5;
@@ -164,25 +172,71 @@ nav #myDropdown .dropdown li{margin-top:10px;padding-left: 5%;}
 
 /* what to expect */
 .expect {padding:5%;background:#000000;}
-.expect .dgrid {display:grid;grid-template-columns: auto auto auto;gap:25px; padding-bottom:5%;}
+/* .expect .dgrid {display:grid;grid-template-columns: auto auto auto;gap:25px; padding-bottom:5%;} */
 #heading {color:#f5f5f5;font-size:3.5rem;font-weight: 700;}
-.expect .para {text-align: justify;color:#f5f5f5;}
+.expect .para {text-align: justify;color:#f5f5f5 !important;}
 
 @keyframes expand {
     from {height:0;}
     to {height: 100%;}
 }
-.expect .dgrid #item {color:#f5f5f5;position:relative;text-align: center;}
+/* .expect .dgrid #item {color:#f5f5f5;position:relative;text-align: center;}
+.expect .dgrid #item img {border-radius: 25px;}
 .expect .dgrid #item h2, .expect .dgrid #item p {margin-top:10px;color:#000000 !important;}
-.expect .dgrid #item a {display:none;margin-top: 20px;padding: 10px 15px;}
-.expect .dgrid #item p {transform: scale(0);height:0;font-size: 10pt;padding:0 10px;color: #f5f5f5;}
-.expect .dgrid #item #text:hover p {height:100%;transform:scale(1);transition: 0.5s ease;}
-.expect .dgrid #item #text:hover a {display:block; transition: 0.5s ease}
+.expect .dgrid #item a {padding: 10px 15px;}
+.expect .dgrid #item p {font-size: 10pt;padding:0 10px;color: #f5f5f5;}
+.expect .dgrid #item #text:hover p {transform:scale(1);transition: 0.5s ease;}
+.expect .dgrid #item #text:hover a {display:block;margin-top: 100px; transition: 0.5s ease}
 .expect .dgrid #item:focus p {height:100%;transform:scale(1);transition: 0.5s ease;}
-.expect .dgrid #item #text {background: rgba(255,255,255,1);padding:10px;position:absolute;bottom:-40px;left: 0;right: 0;margin: 0 10px;border-radius: 25px;}
-@media screen and (max-width:500px) {
-    .expect .dgrid {grid-template-columns: auto;padding-bottom:12%;}
+.expect .dgrid #item #text {background: linear-gradient(to bottom,rgba(255,255,255,1),transparent);padding:10px;position:absolute;bottom:0px;left: 0;right: 0;top:0;border-radius: 25px;} */
+
+.expect .grid {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 30px 10px;
+    padding-top:3%;
 }
+.expect .grid .item {
+    padding:15px 20px;
+    color: #000000;
+    
+    background: linear-gradient(to top,limegreen,transparent);
+    flex-basis: 20%;
+    border-radius: 10px;
+    text-align: center;
+    position: relative;
+}
+.expect .grid .item img {border-radius: 10px;}
+.expect .grid .item h1 {margin-top: 10px;}
+.expect .grid .item .overlay p {text-align: justify;}
+.expect .grid .item .overlay {
+    top: 0; bottom: 100%; left: 0; right: 0; 
+    background:rgba(50,205,50,1);
+    height:0;
+    justify-content: center;
+    align-items: center;
+    
+    border-radius: 10px;
+    transition: 0.3s ease;
+}
+.expect .grid .item:hover .overlay{
+    bottom: 0;
+    height: auto;
+    position: absolute;
+    display: grid;
+    padding: 20px;
+    transition: 0.5s ease;
+    
+}
+@media screen and (max-width:1230px) {
+    .expect .grid .item{flex-basis: 25%;padding-bottom:12%;}
+}
+@media screen and (max-width:500px) {
+    .expect .grid .item{flex-basis: 100%;padding-bottom:12%;}
+}
+
+
 
 .contact {padding: 5% 5%;}
 .contact h1 {color:#f5f5f5;font-size: 40pt;}
@@ -222,3 +276,4 @@ nav #myDropdown .dropdown li{margin-top:10px;padding-left: 5%;}
     .mobBtn {background: limegreen; border: 1px solid limegreen !important;padding:10px 15px;color:#000000 !important;border-radius: 25px;}
     .expect .dgrid {grid-template-columns: 50% 50%;}
 }
+
