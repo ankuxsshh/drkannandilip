@@ -1,3 +1,5 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -31,9 +33,10 @@
         <div class="nav">
             <div id="logo"><a href="/"><h2>Dr. Kannan Dilip</h2></a></div>
             <div id="navContent">
-                <a href="/about">About</a>
-                <a href="/achievements">Expertise</a>
-                <a href="/contact">Contact</a>
+                <a href="{% url 'about' %}">About</a>
+                <a href="{% url 'expertise' %}">Expertise</a>
+                <a href="{% url 'articles' %}">Articles</a>
+                <a href="{% url 'contact' %}">Contact</a>
             </div>
             <div id="menu">
                 <a type="button"><img src="../static/images/icons/menu.png" class="dropbtn" onclick="drop()" alt="menu" width="40px"></a>
@@ -41,9 +44,10 @@
         </div>
         <div id="myDropdown">
             <ul class="dropdown">
-                <li><a href="/about">About</a></li>
-                <li><a href="/achievements">Expertise</a></li>
-                <li><a href="/contact">Contact</a></li>
+                <li><a href="{% url 'about' %}">About</a></li>
+                <li><a href="{% url 'expertise' %}">Expertise</a></li>
+                <li><a href="{% url 'articles' %}">Articles</a></li>
+                <li><a href="{% url 'contact' %}">Contact</a></li>
             </ul>
         </div>
         
@@ -297,6 +301,36 @@
         </div>
         </div>
         
+    </section>
+
+    <section class="articles">
+        <h1 id="heading">Articles</h1><br><br>
+        <div class="content">
+            <div id="article">
+                <div class="image">
+                    <img src="{% static 'images/researcher.jpg' %}" alt="" id="img" width="100%">
+                    <div class="overlay"><a href="#">Read More</a></div>
+                </div>
+                <h2>This is the title for the article.</h2>
+                <br><p>This is a short description of the article. This gives a clear idea about eveything mentioned in the article.</p>
+            </div>
+            <div id="article">
+                <div id="image">
+                    <img src="{% static 'images/researcher.jpg' %}" alt="" id="img" width="100%">
+                    <div class="overlay"><a href="#">Read More</a></div>
+                </div>
+                <h2>This is the title for the article.</h2>
+                <br><p>This is a short description of the article. This gives a clear idea about eveything mentioned in the article.</p>
+            </div>
+            <div id="article">
+                <div id="image">
+                    <img src="{% static 'images/researcher.jpg' %}" alt="" id="img" width="100%">
+                    <div class="overlay"><a href="#">Read More</a></div>
+                </div>
+                <h2>This is the title for the article.</h2>
+                <br><p>This is a short description of the article. This gives a clear idea about eveything mentioned in the article.</p>
+            </div>
+        </div>
     </section>
     
 
