@@ -12,10 +12,10 @@ body {
 .mt50 {margin-top: 50px;}
 
 #btn {border: 1px solid #808080;padding:10px 15px;transition:0.5s ease;border-radius: 25px;}
-#btn:hover {border: 1px solid limegreen;background: limegreen;color:#000000;transition:0.5s ease;}
+#btn:hover {border: 1px solid rgba(162, 162, 255, 0.956);background: rgba(162, 162, 255, 0.956);color:#000000;transition:0.5s ease;}
 
 a {text-decoration: none !important; color:#808080;transition:0.3s ease;}
-a:hover {color: limegreen;transition:0.3s ease;}
+a:hover {color: rgba(162, 162, 255, 0.956);transition:0.3s ease;}
 
 nav{position: sticky;top:0;z-index: 9999;}
 nav .nav {padding:20px 5%;display: flex;justify-content: space-between;align-items: center;flex-wrap: wrap;gap: 20px; z-index:999;position: sticky !important;top:0;background: #000000;}
@@ -57,7 +57,7 @@ nav #myDropdown .dropdown li{margin-top:10px;padding-left: 5%;}
 .videoBg .videoText h1 {font-size:clamp(2.4rem,10vw,5.5rem);font-weight: 800;}
 .videoBg .videoText p {font-size: clamp(0.5,10vw,1.5rem);margin-top:10px;padding: 2% 20%;line-height: 1.5;}
 .videoBg .videoText a {position: absolute; bottom:100px; padding: 10px 15px; border: 1px solid #f5f5f5; border-radius: 25px; color: #f5f5f5; transition: 0.5s ease-in;}
-.videoBg .videoText a:hover {background: limegreen; border: 1px solid limegreen; color: #000000; transition: 0.3s ease-in; font-weight: 700;}
+.videoBg .videoText a:hover {background: rgba(162, 162, 255, 0.956); border: 1px solid rgba(162, 162, 255, 0.956); color: #000000; transition: 0.3s ease-in; font-weight: 700;}
 /* HERO */
 .hero{padding:0;display:grid;gap:50px;overflow: hidden;grid-template-columns: 50% 50%;width:100%;}
 .hero #content, .hero #img {color: #f5f5f5;}
@@ -76,7 +76,7 @@ nav #myDropdown .dropdown li{margin-top:10px;padding-left: 5%;}
     font-size: 12pt;
 }
 .hero #btns #cntn {border:1px solid #808080;padding:10px 15px;transition:0.3s ease-in; border-radius: 25px;}
-.hero #btns #cntn:hover {background: limegreen;color:#000000 !important;transition:0.3s ease-in;border:1px solid limegreen; border-radius: 25px;}
+.hero #btns #cntn:hover {background: rgba(162, 162, 255, 0.956);color:#000000 !important;transition:0.3s ease-in;border:1px solid rgba(162, 162, 255, 0.956); border-radius: 25px;}
 
 @media screen and (max-width:500px) {
     .hero {
@@ -97,7 +97,7 @@ nav #myDropdown .dropdown li{margin-top:10px;padding-left: 5%;}
 }
 .hero #content #quote i {font-family: signature !important;text-align: center; font-size: 20pt  !important;}
 .hero #content span {transition:0.2s ease;}
-.hero #content span:hover {color:limegreen; transition: 0.2s ease;}
+.hero #content span:hover {color:rgba(162, 162, 255, 0.956); transition: 0.2s ease;}
 /* ABOUT */
 .about .video video {max-height: 100vh;width:100%;}
 
@@ -126,10 +126,10 @@ nav #myDropdown .dropdown li{margin-top:10px;padding-left: 5%;}
 .about .left {margin-top:25px;text-align: center;}
 
 .booking {background: url(../images/consult2.jpg);background-size: cover;background-attachment: fixed;justify-content: left;}
-.booking .div2 {padding:5% 0;background: linear-gradient(to right,rgba(0,0,0,0.6),transparent);width: 100%;}
+.booking .div2 {padding:5% 0;background: linear-gradient(to right,rgba(0,0,0,0.2),transparent);width: 100%;}
 .booking .div2 h1 {color: #000000;padding-left:5%;font-size:clamp(1rem,10vw,3rem);margin-bottom: 25px;}
 .booking .div2 p {padding-left:5%;margin-top:5px;font-size:15pt;}
-.booking .div2 #book {margin-left:5%;margin-top:20px;background: limegreen;border: 1px solid limegreen;border-radius: 25px;padding:10px 20px;font-size: 12pt;cursor: pointer;}
+.booking .div2 #book {margin-left:5%;margin-top:20px;background: rgba(162, 162, 255, 0.979); border: 1px solid rgba(162, 162, 255, 0.956);border-radius: 25px;padding:10px 20px;font-size: 12pt;cursor: pointer;}
 .booking .div2 #book:hover {background: #000000;border: 1px solid #000000;color:#f5f5f5;transition:ease 0.3s}
 /* .booking .div2 form {display:grid;padding:5%;gap:15px;} */
 .booking .div2, .booking .div1 {flex-basis:50%;}
@@ -138,10 +138,10 @@ nav #myDropdown .dropdown li{margin-top:10px;padding-left: 5%;}
     .booking .div2 {text-align: center;}
 }
 .booking2 {background: url(../images/parallax.jpg);background-size: cover;background-attachment: fixed;justify-content: left;}
-.booking2 .div2 {padding:5% 0;background: linear-gradient(to right,rgba(0,0,0,0.6),transparent);width: 100%;}
+.booking2 .div2 {padding:5% 0;background: linear-gradient(to right,rgba(0,0,0,0.2),transparent);width: 100%;}
 .booking2 .div2 h1 {color: #000000;padding-left:5%;font-size:clamp(1rem,10vw,3rem);margin-bottom: 25px;}
 .booking2 .div2 p {padding-left:5%;margin-top:5px;font-size:15pt;}
-.booking2 .div2 #book {margin-left:5%;margin-top:20px;background: limegreen;border: 1px solid limegreen;border-radius: 25px;padding:10px 20px;font-size: 12pt;cursor: pointer;}
+.booking2 .div2 #book {margin-left:5%;margin-top:20px;background: rgba(162, 162, 255, 0.956) ;border: 1px solid rgba(162, 162, 255, 0.956);border-radius: 25px;padding:10px 20px;font-size: 12pt;cursor: pointer;}
 .booking2 .div2 #book:hover {background: #000000;border: 1px solid #000000;color:#f5f5f5;transition:ease 0.3s}
 /* .booking .div2 form {display:grid;padding:5%;gap:15px;} */
 .booking2 .div2, .booking .div1 {flex-basis:50%;}
@@ -149,12 +149,29 @@ nav #myDropdown .dropdown li{margin-top:10px;padding-left: 5%;}
 @media screen and (max-width:500px) {
     .booking2 .div2 {text-align: center;}
 }
+
 /* Achievements */
 .achievements {padding:0 0%;background: linear-gradient(to bottom,#000000 30%,#f5f5f5 70%);}
 .achievements .flex {display:grid;grid-template-columns: 25% 25% 25% 25%;gap:0px;padding-bottom:5%;}
 .achievements #heading {color:#f5f5f5;font-size:3.4rem;display: none;}
 .achievements .dgrid {position:relative;}
-.achievements .dgrid #text{
+
+/* New class for equal height and width images */
+.achievements .dgrid #img {
+    width: 100%; /* Ensures full width */
+    height: 200px; /* Fixed height for uniformity */
+    overflow: hidden; /* Hides overflow */
+    display: flex; /* Align items in the center */
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+}
+.achievements .dgrid #img img {
+    width: 100%; /* Ensures image fills the container */
+    height: auto; /* Maintain aspect ratio */
+    max-height: 100%; /* Ensures the image does not exceed the height of the container */
+}
+
+.achievements .dgrid #text {
     color:#f5f5f5;
     text-align: center;
     position: absolute;
@@ -168,8 +185,7 @@ nav #myDropdown .dropdown li{margin-top:10px;padding-left: 5%;}
 }
 .achievements .dgrid:hover #text{transform: scale(1);transition:0.2s ease;}
 .achievements .dgrid #text h1 {font-size:12pt;margin-top:15px; color: #f5f5f5;padding:10px 15px;border: 1px solid #f5f5f5;border-radius: 25px;}
-/* .achievements .flex50 #text, .achievements .flex50 #img {flex-basis: 50%;} */
-.achievements .dgrid #text h1:hover {color:#000000;transition: 0.2s ease;background: limegreen;border:1px solid limegreen;}
+.achievements .dgrid #text h1:hover {color:#000000;transition: 0.2s ease;background: rgba(162, 162, 255, 0.956);border:1px solid rgba(162, 162, 255, 0.956);}
 
 .achievements .dgrid #itemName {padding:10px;text-align: center;border:2px solid #000000;color: #f5f5f5;background: #000000;}
 @media screen and (max-width:1050px) {
@@ -214,7 +230,7 @@ nav #myDropdown .dropdown li{margin-top:10px;padding-left: 5%;}
     padding:15px 20px;
     color: #000000;
     
-    background: linear-gradient(to top,#f5f5f5,transparent);
+    background: linear-gradient(to top,#ffffff,transparent);
     flex-basis: 20%;
     border-radius: 10px;
     text-align: center;
@@ -226,7 +242,7 @@ nav #myDropdown .dropdown li{margin-top:10px;padding-left: 5%;}
 .expect .grid .item .overlay {
     position: absolute;
     top: 0; bottom: 0; left: 0; right: 0; 
-    background:rgba(50,205,50,1);
+    background:rgba(162, 162, 255, 0.957);
     justify-content: center;
     align-items: center;
     height: 0;
@@ -259,7 +275,7 @@ nav #myDropdown .dropdown li{margin-top:10px;padding-left: 5%;}
 .article p {padding:0 5px 20px 5px;text-align: justify;}
 .article .image #img {border-radius: 10px;}
 .article .image {position: relative !important;}
-.article .image .overlay {position:absolute !important;top: 0;bottom: 0;left: 0;right:0;background: limegreen;color:#000000;justify-content: center;align-items: center;display: none;transition: 0.3s ease;}
+.article .image .overlay {position:absolute !important;top: 0;bottom: 0;left: 0;right:0;background: rgba(162, 162, 255, 0.956);color:#000000;justify-content: center;align-items: center;display: none;transition: 0.3s ease;}
 .article .image .overlay a {padding:10px 15px;color:#000000;border:1px solid #000000;}
 .article .image:hover .overlay {display: flex !important;transition:0.5s ease;}
 .article .image .overlay a:hover {border-radius: 25px;background: #000000;color: #f5f5f5;transition:0.4s ease;} 
@@ -280,7 +296,7 @@ nav #myDropdown .dropdown li{margin-top:10px;padding-left: 5%;}
 .contact #right {padding-left:5%;color: #f5f5f5;font-size: 1.5rem;}
 
 .submitbtn {text-align: center;}
-.submitbtn:hover {background: limegreen !important;color:black !important;border: 1px solid limegreen !important;}
+.submitbtn:hover {background: rgba(162, 162, 255, 0.956) !important;color:black !important;border: 1px solid rgba(162, 162, 255, 0.956) !important;}
 
 @media screen and (max-width:500px) {
     .contact .flex50 {flex-direction:column;gap:70px !important; margin-top:70px;}
@@ -304,7 +320,7 @@ nav #myDropdown .dropdown li{margin-top:10px;padding-left: 5%;}
 #social a img{width:35px}
 
 @media screen and (max-width:1050px) {
-    .mobBtn {background: limegreen; border: 1px solid limegreen !important;padding:10px 15px;color:#000000 !important;border-radius: 25px;}
+    .mobBtn {background: rgba(162, 162, 255, 0.956); border: 1px solid rgba(162, 162, 255, 0.956) !important;padding:10px 15px;color:#000000 !important;border-radius: 25px;}
     .expect .dgrid {grid-template-columns: 50% 50%;}
 }
 
